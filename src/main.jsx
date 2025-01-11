@@ -11,7 +11,7 @@ import Signup from './pages/Signup.jsx'
 import Login from './pages/Login.jsx'
 import Protected from './components/Protected.jsx'
 import Home from './pages/Home.jsx'
-
+import Profile from './pages/Profile.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +20,7 @@ const router = createBrowserRouter(
       <Route path='login' element={<Login/>}  />
       <Route path='/' element={<Protected />}>
         <Route path='/' element={<Home />}/>
+        <Route path='profile' element={<Profile />}/>
       </Route>
 
     </Route>
